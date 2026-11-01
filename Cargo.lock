@@ -223,6 +223,7 @@ dependencies = [
  "blackchain-mempool",
  "blackchain-p2p",
  "blackchain-storage",
+ "hex",
  "serde",
  "serde_json",
  "thiserror",

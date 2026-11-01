@@ -1,0 +1,17 @@
+[package]
+name = "blackchain-crypto"
+version = "0.1.0"
+edition = "2021"
+description = "Cryptographic primitives for Blackchain (Blake3, Ed25519, Merkle Trees)"
+
+[dependencies]
+blake3 = { workspace = true }
+ed25519-dalek = { workspace = true }
+fips204 = { workspace = true }
+rand = { workspace = true }
+serde = { workspace = true }
+hex = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }

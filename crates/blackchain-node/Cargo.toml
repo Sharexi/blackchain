@@ -1,0 +1,29 @@
+[package]
+name = "blackchain-node"
+version = "0.1.0"
+edition = "2021"
+description = "Blackchain Node Daemon, Wallet CLI, and Inference-PoUW Miner"
+
+[[bin]]
+name = "blackchain-node"
+path = "src/main.rs"
+
+[[bin]]
+name = "blackchain-wallet"
+path = "src/bin/wallet.rs"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+blackchain-consensus = { path = "../blackchain-consensus" }
+blackchain-mempool = { path = "../blackchain-mempool" }
+blackchain-storage = { path = "../blackchain-storage" }
+blackchain-compute = { path = "../blackchain-compute" }
+blackchain-p2p = { path = "../blackchain-p2p" }
+blackchain-rpc = { path = "../blackchain-rpc" }
+tokio = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+hex = { workspace = true }

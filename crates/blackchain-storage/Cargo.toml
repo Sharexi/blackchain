@@ -1,0 +1,11 @@
+[package]
+name = "blackchain-storage"
+version = "0.1.0"
+edition = "2021"
+description = "Storage engine and persistence layer for blocks, receipts, and ledger state"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+serde = { workspace = true }
+thiserror = { workspace = true }

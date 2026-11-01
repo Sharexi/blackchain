@@ -1,0 +1,12 @@
+[package]
+name = "blackchain-mempool"
+version = "0.1.0"
+edition = "2021"
+description = "Dual-queue transaction and AI compute inference mempool"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

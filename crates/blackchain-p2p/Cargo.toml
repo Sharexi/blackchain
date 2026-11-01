@@ -1,0 +1,16 @@
+[package]
+name = "blackchain-p2p"
+version = "0.1.0"
+edition = "2021"
+description = "Peer-to-peer networking, discovery, and gossip protocol for Blackchain nodes"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+futures = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

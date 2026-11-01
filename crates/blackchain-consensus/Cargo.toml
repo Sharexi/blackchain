@@ -1,0 +1,13 @@
+[package]
+name = "blackchain-consensus"
+version = "0.1.0"
+edition = "2021"
+description = "Proof of Useful Work (PoUW) consensus engine and dynamic difficulty adjustment"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+hex = { workspace = true }
+serde = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }

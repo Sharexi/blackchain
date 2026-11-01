@@ -1,0 +1,41 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/blackchain-crypto",
+    "crates/blackchain-core",
+    "crates/blackchain-consensus",
+    "crates/blackchain-mempool",
+    "crates/blackchain-storage",
+    "crates/blackchain-compute",
+    "crates/blackchain-p2p",
+    "crates/blackchain-rpc",
+    "crates/blackchain-node",
+]
+
+[workspace.dependencies]
+# Cryptography
+blake3 = "1.5"
+ed25519-dalek = { version = "2.1", features = ["rand_core", "serde"] }
+fips204 = "0.5.0"
+rand = "0.8"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex = "0.4"
+bincode = "1.3"
+
+# Web / HTTP Server
+axum = "0.7"
+tower-http = { version = "0.5", features = ["cors", "trace"] }
+
+# Utilities & Error Handling
+thiserror = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# Async Runtime & Networking
+tokio = { version = "1.38", features = ["full"] }
+tokio-util = { version = "0.7", features = ["codec"] }
+futures = "0.3"

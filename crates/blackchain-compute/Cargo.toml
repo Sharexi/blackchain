@@ -1,0 +1,13 @@
+[package]
+name = "blackchain-compute"
+version = "0.1.0"
+edition = "2021"
+description = "Verifiable AI compute engine and deterministic inference runner for Blackchain"
+
+[dependencies]
+blackchain-core = { path = "../blackchain-core" }
+blackchain-crypto = { path = "../blackchain-crypto" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tracing = { workspace = true }
